@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Andes-Book-Club/blue-ocean/issues"
   },
-  "homepage": "https://github.com/Andes-Book-Club/blue-ocean#readme"
+  "homepage": "https://github.com/Andes-Book-Club/blue-ocean#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
 }
