@@ -18,11 +18,11 @@ const Dashboard = () => {
 
   const getQuizzes = () => {
     axios.get('/users/quizzes')
-    .then((res) => {
-      updateQuizzes(res.data);
-    }).catch((err) => {
-      console.log('error: ', err);
-    });
+      .then((res) => {
+        updateQuizzes(res.data);
+      }).catch((err) => {
+        console.log('error: ', err);
+      });
   };
 
   const getBooks = () => {
@@ -49,10 +49,10 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <QuizzesList quizzes={quizzes} toggleQuiz={toggleQuiz} />
-      <Modal isOpen={modal} toggleModal={toggleModal}>
-        <ModalHeader toggleModal={toggleModal}>Exam</ModalHeader>
+      <Modal isOpen={modal} toggleModal={toggleModal} className="popup">
+        <ModalHeader toggleModal={toggleModal}>Quiz</ModalHeader>
         <ModalBody>
-          <QuizModal bookid={quiz} />
+          <QuizModal bookid={quiz} className="quiz" />
         </ModalBody>
         <ModalFooter>
           <Button color="secondary" onClick={toggleModal}>Cancel Quiz</Button>

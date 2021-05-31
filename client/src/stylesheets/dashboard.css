@@ -103,23 +103,28 @@ a {
 /* ================= */
 /* Questions and Answers Modals */
 /* ========================== */
-/*
 .popup {
+  width: 80%;
+  height: 50%;
   justify-content: center;
   z-index: 15;
 }
 
+/*
 .popup-close {
   position: relative;
   z-index: 100;
 }
+*/
 
 .quiz {
+  width: 80%;
+  height: 50%;
   font-size: 2em;
   display: flex;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  border: solid 0.5px rgba(0,0,0,0.5);
+  /* border: solid 0.5px rgba(0,0,0,0.5); */
   flex-direction: column;
 }
 
@@ -135,10 +140,16 @@ a {
   z-index: 50;
 }
 
+.quiz-prompt button {
+  background: transparent;
+}
+
+
 .quiz-question {
   padding: 30px;
   width: fit-content;
   height: fit-content;
+  border: 3px solid black;
 }
 
 .question-vote {
@@ -190,7 +201,7 @@ a {
 
 .quiz-menu-btn {
   background-color:rgb(46, 46, 77);
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
   padding: 5px 10px;
@@ -204,4 +215,4 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}

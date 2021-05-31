@@ -30,7 +30,7 @@ function QuizView(props) {
     })
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
-      toggleQuiz(<></>);
+    toggleQuiz(<></>);
   }}>
     Submit
   </button>);

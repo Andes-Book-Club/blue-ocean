@@ -47,7 +47,7 @@ const Carousel = ({ children, className }) => {
         {prevDisable ? null : <MdKeyboardArrowLeft />}
       </div>
 
-      <div className="slider-wrapper slider-wrapper">{ children }</div>
+      <div className="slider-wrapper">{children}</div>
 
       <div
         className={`slider-arrow slider-arrow-next ${nextDisable ? 'slider-arrow slider-arrow-disable' : ''}`}
